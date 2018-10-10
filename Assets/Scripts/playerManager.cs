@@ -10,14 +10,55 @@ public class playerManager : MonoBehaviour {
     public int envy = 0;
     public int disgust = 0;
     public int consequence = 0;
+    public Sprite[] faces;
 	// Use this for initialization
 	void Start ()
     {
         DontDestroyOnLoad(this.gameObject);
 	}
-	
-	// Update is called once per frame
-	public void setHappy(int _happy)
+
+    public Sprite getFace()
+    {
+        int i = chooseSprite();
+        return faces[i];
+    }
+    //negative emotions are always negative numbers, happy is always positive, consequence can be either.
+    private int chooseSprite()
+    {
+        int final = 0;
+        float negative = sad + angry + disgust + envy;
+
+        if (happy + consequence + negative > -5 && happy + consequence + negative < 5)
+        {
+            //should be 2 for meh.
+            final = 0;
+        }
+        if (happy + consequence + negative < -5 && happy + consequence + negative > -10)
+        {
+            //should be 3 for bad.
+            final = 0;
+        }
+
+        if (happy + consequence + negative < -10)
+        {
+            //should be 4 for terrible.
+            final = 0;
+        }
+        if (happy + consequence + negative > 5 && happy + consequence + negative < 10)
+        {
+            //should be 1 for okay.
+            final = 0;
+        }
+        if (happy + consequence + negative > 10)
+        {
+            //should be 0 for awesome.
+            final = 0;
+        }
+        return final;
+    }
+
+    // Update is called once per frame
+    public void setHappy(int _happy)
     {
         happy += _happy;
     }

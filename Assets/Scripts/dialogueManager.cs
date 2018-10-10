@@ -18,6 +18,7 @@ public class dialogueManager : MonoBehaviour {
     public dialogueParser parser;
     public canvasManager canvas;
 
+
     // Use this for initialization
     void Start ()
     {
@@ -54,7 +55,7 @@ public class dialogueManager : MonoBehaviour {
             characterName = parser.getName(lineNum);
             dialogue = parser.getText(lineNum);
             //DisplayImages if we want to ya know ;)
-            //DisplayImages();
+            
         }
         else
         {
@@ -66,8 +67,11 @@ public class dialogueManager : MonoBehaviour {
             canvas.updateChoice();
             canvas.updateTextbox();
             CreateButtons();
+            canvas.sprite.GetComponent<Image>().sprite = player.getFace();
         }
     }
+
+
     private bool parseRequirements(string[] _requirements)
     {
         for(int i = 0; i < _requirements.Length; i++)

@@ -8,6 +8,7 @@ public class canvasManager : MonoBehaviour {
     public GameObject[] buttonPositions;
     public GameObject textbox;
     public GameObject diamondFrame;
+    public GameObject sprite;
 	// Use this for initialization
 	
     public void updateTextbox()
