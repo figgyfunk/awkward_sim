@@ -10,12 +10,13 @@ public class dialogueManager : MonoBehaviour {
     public List<string> choices;
     public bool playerTalking;
     List<Button> buttons = new List<Button>();
-    public Transform choicePanel;
+
     public playerManager player;
     public Text dialogueBox;
     public Text nameBox;
     public GameObject choiceBox;
     public dialogueParser parser;
+    public canvasManager canvas;
 
     // Use this for initialization
     void Start ()
@@ -61,6 +62,9 @@ public class dialogueManager : MonoBehaviour {
             characterName = "";
             dialogue = "";
             choices = parser.GetChoices(lineNum);
+            
+            canvas.updateChoice();
+            canvas.updateTextbox();
             CreateButtons();
         }
     }
@@ -85,6 +89,18 @@ public class dialogueManager : MonoBehaviour {
                 {
                     if(player.angry > num) { return false; }
                 }
+                else if (i == 3)
+                {
+                    if(player.disgust > num) { return false; }
+                }
+                else if(i == 4)
+                {
+                    if(player.envy > num) { return false; }
+                }
+                else if(i == 5)
+                {
+                    if(player.consequence > num) { return false; }
+                }
             }
             if (item[0] == ">" || item[0] == ">=")
             {
@@ -99,6 +115,18 @@ public class dialogueManager : MonoBehaviour {
                 else if (i == 2)
                 {
                     if (player.angry < num) { return false; }
+                }
+                else if(i == 3)
+                {
+                    if(player.disgust < num) { return false; }
+                }
+                else if(i == 4)
+                {
+                    if(player.envy < num) { return false; }
+                }
+                else if(i == 5)
+                {
+                    if(player.consequence < num) { return false; }
                 }
             }
             if(item[0] == "=")
@@ -115,6 +143,18 @@ public class dialogueManager : MonoBehaviour {
                 {
                     if (player.angry != num) { return false; }
                 }
+                else if(i == 3)
+                {
+                    if(player.disgust != num) { return false; }
+                }
+                else if(i == 4)
+                {
+                    if(player.envy != num) { return false; }
+                }
+                else if(i == 5)
+                {
+                    if(player.consequence != num) { return false; }
+                }
             }
             
 
@@ -123,22 +163,40 @@ public class dialogueManager : MonoBehaviour {
     }
 
 
-    private void makeAdditions(string[] _additions)
+    public void makeAdditions(string[] _additions)
     {
+        //Debug.Log("here");
         for(int i = 0; i < _additions.Length; i++)
         {
             int num = int.Parse(_additions[i]);
+            //happy
             if(i == 0)
             {
                 player.setHappy(num); 
             }
+            //sad
             else if( i == 1)
             {
                 player.setSad(num);
             }
+            //anger
             else if(i == 2)
             {
                 player.setAngry(num);
+            }
+            //disgust
+            else if(i == 3)
+            {
+                player.setDisgust(num);
+            }
+            //envy
+            else if(i == 4)
+            {
+                player.setEnvy(num);
+            }
+            else if(i == 5)
+            {
+                player.setConsequence(num);
             }
         }
     }
@@ -151,19 +209,55 @@ public class dialogueManager : MonoBehaviour {
             string[] additions = choices[i].Split('?')[1].Split('/')[1].Split(',');
             if (parseRequirements(requirements))
             {
-                makeAdditions(additions);
+
+
+                //makeAdditions(additions);
                 GameObject button = (GameObject)Instantiate(choiceBox);
                 //Button b = button.GetComponent<Button>();
                 makeChoice cb = button.GetComponent<makeChoice>();
                 cb.setText(textual.Split(':')[0]);
                 cb.choice = textual.Split(':')[1];
                 cb.manager = this;
-                button.transform.SetParent(choicePanel.transform);
-                button.transform.localPosition = new Vector3(0, -25 + (i * 150));
-                button.transform.localScale = new Vector3(3, 5, 1);
+                cb.additions = additions;
+                button.transform.position = canvas.getButton(i);
+                button.transform.SetParent(canvas.diamondFrame.transform);
+                button.transform.localScale = new Vector3(1, 1, 1);
+
+                buttons.Add(button.GetComponent<Button>());
+
+            }
+            else
+            {
+                GameObject button = (GameObject)Instantiate(choiceBox);
+                //Button b = button.GetComponent<Button>();
+                makeChoice cb = button.GetComponent<makeChoice>();
+                cb.setText("Option not available");
+                cb.choice = "blocked,0";
+                cb.manager = this;
+                button.transform.position = canvas.getButton(i);
+                button.transform.SetParent(canvas.diamondFrame.transform);
+                button.transform.localScale = new Vector3(1, 1, 1);
+                
+                buttons.Add(button.GetComponent<Button>());
+
+            }
+        }
+        if(choices.Count < 4)
+        {
+            for(int i = choices.Count; i < 4; i++)
+            {
+                GameObject button = (GameObject)Instantiate(choiceBox);
+                //Button b = button.GetComponent<Button>();
+                makeChoice cb = button.GetComponent<makeChoice>();
+                cb.setText("Option not available");
+                cb.choice = "blocked,0";
+                cb.manager = this;
+                button.transform.position = canvas.getButton(i);
+                button.transform.SetParent(canvas.diamondFrame.transform);
+                button.transform.localScale = new Vector3(1, 1, 1);
+
                 buttons.Add(button.GetComponent<Button>());
             }
-            
         }
     }
 

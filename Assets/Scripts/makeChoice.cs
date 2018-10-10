@@ -8,6 +8,7 @@ public class makeChoice : MonoBehaviour {
 
     public string choice;
     public dialogueManager manager;
+    public string[] additions;
     // Use this for initialization
 
     public void setText(string newText)
@@ -24,11 +25,15 @@ public class makeChoice : MonoBehaviour {
     {
         string command = choice.Split(',')[0];
         string num = choice.Split(',')[1];
-        manager.playerTalking = false;
+        
         if (command == "line")
         {
             manager.lineNum = int.Parse(num);
             manager.showText();
+            manager.playerTalking = false;
+            manager.canvas.updateChoice();
+            manager.canvas.updateTextbox();
+            manager.makeAdditions(additions);
         }
         else if (command == "scene")
         {
@@ -40,6 +45,15 @@ public class makeChoice : MonoBehaviour {
             manager.parser.LoadDialogue("Assets/Placeholder Assets/" + manager.parser.prefix + "_" + num + ".txt");
             manager.lineNum = 0;
             manager.showText();
+            manager.playerTalking = false;
+            manager.canvas.updateChoice();
+            manager.canvas.updateTextbox();
+            manager.makeAdditions(additions);
         }
+        else if(command == "blocked")
+        {
+            //do nothing for now. maybe play blocked noise?
+        }
+        
     }
 }

@@ -7,6 +7,9 @@ public class playerManager : MonoBehaviour {
     public int happy = 0;
     public int sad = 0;
     public int angry = 0;
+    public int envy = 0;
+    public int disgust = 0;
+    public int consequence = 0;
 	// Use this for initialization
 	void Start ()
     {
@@ -27,5 +30,20 @@ public class playerManager : MonoBehaviour {
     public void setAngry(int _angry)
     {
         angry += _angry;
+    }
+
+    public void setEnvy(int _envy)
+    {
+        envy += _envy;
+    }
+
+    public void setDisgust(int _disgust)
+    {
+        disgust += _disgust;
+    }
+    
+    public void setConsequence(int _consequence)
+    {
+        consequence += _consequence;
     }
 }
