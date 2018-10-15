@@ -23,7 +23,7 @@ public class playerManager : MonoBehaviour {
         return faces[i];
     }
     //negative emotions are always negative numbers, happy is always positive, consequence can be either.
-    private int chooseSprite()
+    public int chooseSprite()
     {
         int final = 0;
         float negative = sad + angry + disgust + envy;

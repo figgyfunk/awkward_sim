@@ -1,0 +1,18 @@
+Normal line of text: 
+Name;Dialogue
+
+Choice text:
+Player;Choice1Text:type_of_choice,num?sym,happy:sym,sad:sym,angry:sym,disgust:sym,envy:sym,consequence/happy,sad,angry,disgust,envy,consequence;Choice2 etc.
+
+All files for the same section should have the same prefix and should be titled started at 0 ex. base_0, base_1 etc. 
+
+Symbols can be <=, =>,<,>,<,=
+Types of choices:
+line - goes to given line num in file, num = line num to go to. 
+scene - loads a new scene, num = scene to load. 
+file - loads new file with same prefix, num = number at end of the file name.
+sym,emotion is the requirement for that choice aka, happy >= 0. 
+the other emotions are what get added if you make that choice.
+Happy should always be positive. 
+Sad, angry, disgust, envy should always be negative.
+Consequence can be either.
