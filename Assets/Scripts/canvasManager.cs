@@ -21,8 +21,13 @@ public class canvasManager : MonoBehaviour {
         diamondFrame.SetActive(!diamondFrame.activeInHierarchy);
     }
 
-    public Vector3 getButton(int i)
+    public Transform getButton(int i)
     {
-        return buttonPositions[i].transform.position;
+        return buttonPositions[i].transform;
+    }
+
+    public Transform getText(int i)
+    {
+        return buttonPositions[i].GetComponentInChildren<Text>().transform;
     }
 }

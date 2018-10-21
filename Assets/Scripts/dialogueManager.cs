@@ -9,14 +9,14 @@ public class dialogueManager : MonoBehaviour {
     public int lineNum;
     public List<string> choices;
     public bool playerTalking;
-    List<Button> buttons = new List<Button>();
-
+    public List<Button> buttons = new List<Button>();
+    public GameObject choiceBox;
     public playerManager player;
     public Text dialogueBox;
     public Text nameBox;
-    public GameObject choiceBox;
     public dialogueParser parser;
     public canvasManager canvas;
+    public Sprite blockedButton;
 
 
     // Use this for initialization
@@ -213,36 +213,51 @@ public class dialogueManager : MonoBehaviour {
             string[] additions = choices[i].Split('?')[1].Split('/')[1].Split(',');
             if (parseRequirements(requirements))
             {
-
-
-                //makeAdditions(additions);
                 GameObject button = (GameObject)Instantiate(choiceBox);
-                //Button b = button.GetComponent<Button>();
                 makeChoice cb = button.GetComponent<makeChoice>();
                 cb.setText(textual.Split(':')[0]);
                 cb.choice = textual.Split(':')[1];
                 cb.manager = this;
                 cb.additions = additions;
-                button.transform.position = canvas.getButton(i);
+                button.transform.position = canvas.getButton(i).position;
+                button.transform.rotation = canvas.getButton(i).rotation;
+                
+                if(button.transform.rotation == new Quaternion(0f, 0f, 1f, 0f))
+                {
+                    button.GetComponentInChildren<Text>().transform.rotation = canvas.getText(i).rotation;
+                    button.GetComponentInChildren<Text>().transform.position = canvas.getText(i).position;
+                }
+                
+
                 button.transform.SetParent(canvas.diamondFrame.transform);
-                button.transform.localScale = new Vector3(1, 1, 1);
+                button.transform.localScale = new Vector3(.5f, .5f, 1);
 
                 buttons.Add(button.GetComponent<Button>());
+
 
             }
             else
             {
+
                 GameObject button = (GameObject)Instantiate(choiceBox);
                 //Button b = button.GetComponent<Button>();
                 makeChoice cb = button.GetComponent<makeChoice>();
                 cb.setText("Option not available");
                 cb.choice = "blocked,0";
                 cb.manager = this;
-                button.transform.position = canvas.getButton(i);
+                button.transform.position = canvas.getButton(i).position;
+                button.transform.rotation = canvas.getButton(i).rotation;
+                if (button.transform.rotation == new Quaternion(0f, 0f, 1f, 0f))
+                {
+                    button.GetComponentInChildren<Text>().transform.rotation = canvas.getText(i).rotation;
+                    button.GetComponentInChildren<Text>().transform.position = canvas.getText(i).position;
+                }
+
                 button.transform.SetParent(canvas.diamondFrame.transform);
-                button.transform.localScale = new Vector3(1, 1, 1);
-                
+                button.transform.localScale = new Vector3(.5f, .5f, 1);
+
                 buttons.Add(button.GetComponent<Button>());
+                buttons[i].image.sprite = blockedButton;
 
             }
         }
@@ -250,17 +265,25 @@ public class dialogueManager : MonoBehaviour {
         {
             for(int i = choices.Count; i < 4; i++)
             {
+
                 GameObject button = (GameObject)Instantiate(choiceBox);
                 //Button b = button.GetComponent<Button>();
                 makeChoice cb = button.GetComponent<makeChoice>();
                 cb.setText("Option not available");
                 cb.choice = "blocked,0";
                 cb.manager = this;
-                button.transform.position = canvas.getButton(i);
+                button.transform.position = canvas.getButton(i).position;
+                button.transform.rotation = canvas.getButton(i).rotation;
                 button.transform.SetParent(canvas.diamondFrame.transform);
-                button.transform.localScale = new Vector3(1, 1, 1);
+                button.transform.localScale = new Vector3(.5f, .5f, 1);
+                if (button.transform.rotation == new Quaternion(0f, 0f, 1f, 0f))
+                {
+                    button.GetComponentInChildren<Text>().transform.rotation = canvas.getText(i).rotation;
+                    button.GetComponentInChildren<Text>().transform.position = canvas.getText(i).position;
+                }
 
                 buttons.Add(button.GetComponent<Button>());
+                buttons[i].image.sprite = blockedButton;
             }
         }
     }
@@ -273,7 +296,8 @@ public class dialogueManager : MonoBehaviour {
         }
         if(characterName != "" && dialogue != "")
         {
-            dialogueBox.text = characterName + ": " + dialogue;
+            dialogueBox.text =  dialogue;
+            nameBox.text = characterName;
         }
         
         //nameBox.text = characterName;
