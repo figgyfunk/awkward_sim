@@ -145,7 +145,6 @@ MonoBehaviour:
   minWaggle: -250
   shiftAmount: 250
   bar: {fileID: 1075468873}
-  displayed: 0
 --- !u!4 &5748153
 Transform:
   m_ObjectHideFlags: 0

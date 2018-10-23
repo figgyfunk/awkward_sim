@@ -54,6 +54,16 @@ public class makeChoice : MonoBehaviour {
         {
             //do nothing for now. maybe play blocked noise?
         }
+        else if(command == "activate")
+        {
+            manager.lineNum = int.Parse(num);
+            manager.showText();
+            manager.playerTalking = false;
+            manager.canvas.updateChoice();
+            manager.canvas.updateTextbox();
+            manager.makeAdditions(additions);
+            manager.canvas.activateCharacter();
+        }
         
     }
 }

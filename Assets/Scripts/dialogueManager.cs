@@ -26,6 +26,7 @@ public class dialogueManager : MonoBehaviour {
         characterName = "";
         playerTalking = false;
         lineNum = 0;
+
     }
 	
 	// Update is called once per frame

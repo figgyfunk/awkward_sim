@@ -27,18 +27,13 @@ public class dialogueParser : MonoBehaviour {
     //prefix should be similar to what the scene is called for clarity, first file is always 0.
     public string prefix;
 
-	// Use this for initialization
-	void Start ()
-    {
-        string file = "Assets/Placeholder Assets/";
-        file += prefix;
-        file += "_0.txt";
-        LoadDialogue(file);
-    }
-	
+
     //parses file and creates script for game to read info from. 
-    public void LoadDialogue(string fileName)
+    public void LoadDialogue()
     {
+        string fileName = "Assets/Placeholder Assets/";
+        fileName += prefix;
+        fileName += "_0.txt";
         string currLine;
         StreamReader r = new StreamReader(fileName);
 
@@ -65,7 +60,35 @@ public class dialogueParser : MonoBehaviour {
         r.Close();
         
     }
-	
+
+    public void LoadDialogue(string fileName)
+    {
+        string currLine;
+        StreamReader r = new StreamReader(fileName);
+
+        while ((currLine = r.ReadLine()) != null)
+        {
+
+            string[] data = currLine.Split(';');
+            if (data.Length == 0) { continue; }
+            if (data[0] == "Player")
+            {
+                line entry = new line(data[0], "");
+                for (int i = 1; i < data.Length; i++)
+                {
+                    entry.choices.Add(data[i]);
+                }
+                script.Add(entry);
+            }
+            else
+            {
+                line entry = new line(data[0], data[1]);
+                script.Add(entry);
+            }
+        }
+        r.Close();
+
+    }
     public string getName(int lineNum)
     {
 

@@ -9,6 +9,7 @@ public class canvasManager : MonoBehaviour {
     public GameObject textbox;
     public GameObject diamondFrame;
     public GameObject sprite;
+    public List<GameObject> characters;
 	// Use this for initialization
 	
     public void updateTextbox()
@@ -29,5 +30,10 @@ public class canvasManager : MonoBehaviour {
     public Transform getText(int i)
     {
         return buttonPositions[i].GetComponentInChildren<Text>().transform;
+    }
+
+    public void activateCharacter()
+    {
+        characters[1].SetActive(true);
     }
 }
