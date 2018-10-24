@@ -31,23 +31,23 @@ public class playerManager : MonoBehaviour {
         if (happy + consequence + negative > -5 && happy + consequence + negative < 5)
         {
             //should be 2 for meh.
-            final = 0;
+            final = 2;
         }
         if (happy + consequence + negative < -5 && happy + consequence + negative > -10)
         {
             //should be 3 for bad.
-            final = 0;
+            final = 3;
         }
 
         if (happy + consequence + negative < -10)
         {
             //should be 4 for terrible.
-            final = 0;
+            final = 4;
         }
         if (happy + consequence + negative > 5 && happy + consequence + negative < 10)
         {
             //should be 1 for okay.
-            final = 0;
+            final = 1;
         }
         if (happy + consequence + negative > 10)
         {

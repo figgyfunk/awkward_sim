@@ -39,8 +39,7 @@ public class dialogueParser : MonoBehaviour {
 
         while ((currLine = r.ReadLine()) != null)
         {
-            
-            string[] data = currLine.Split(';'); 
+            string[] data = currLine.Split(';');
             if(data.Length == 0) { continue; }
             if(data[0] == "Player")
             {

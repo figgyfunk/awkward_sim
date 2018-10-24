@@ -17,6 +17,7 @@ public class dialogueManager : MonoBehaviour {
     public dialogueParser parser;
     public canvasManager canvas;
     public Sprite blockedButton;
+    public float defaultValue;
 
 
     // Use this for initialization
@@ -207,11 +208,13 @@ public class dialogueManager : MonoBehaviour {
     }
     void CreateButtons()
     {
+        Debug.Log(choices.Count);
         for (int i = 0; i < choices.Count; i++)
         {
-            string textual = choices[i].Split('?')[0];
-            string[] requirements = choices[i].Split('?')[1].Split('/')[0].Split(':');
-            string[] additions = choices[i].Split('?')[1].Split('/')[1].Split(',');
+            string textual = choices[i].Split('$')[0];
+            
+            string[] requirements = choices[i].Split('$')[1].Split('/')[0].Split(':');
+            string[] additions = choices[i].Split('$')[1].Split('/')[1].Split(',');
             if (parseRequirements(requirements))
             {
                 GameObject button = (GameObject)Instantiate(choiceBox);
