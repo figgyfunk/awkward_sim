@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1eb31b30c0cf5674a80562b55c5125bc
+guid: dcd10b7d1b4e0a94889069e30f9e18e4
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,14 +8,12 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Sophistica 1 Swashes
+  fontName: EuropeanTypewriter
   fontNames:
-  - Sophistica 1 Swashes
-  - Washington free
-  - Romtthing Free
+  - EuropeanTypewriter
+  - VertigoFLF
   fallbackFontReferences:
-  - {fileID: 12800000, guid: e2faf3f2b125e7541bcf21367c5d63ed, type: 3}
-  - {fileID: 12800000, guid: 73399e8f1ea50264aa83d7a6008c0784, type: 3}
+  - {fileID: 12800000, guid: 14c083b51e77366499ae15ab83578ac0, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

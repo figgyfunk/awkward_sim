@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class dialogueManager : MonoBehaviour {
 
+    public int nextScene;
     public string dialogue, characterName;
     public int lineNum;
     public List<string> choices;
@@ -18,6 +20,7 @@ public class dialogueManager : MonoBehaviour {
     public canvasManager canvas;
     public Sprite blockedButton;
     public float defaultValue;
+    private bool end = false;
 
 
     // Use this for initialization
@@ -33,12 +36,18 @@ public class dialogueManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		if(Input.GetMouseButtonDown(0) && playerTalking == false)
+        updateUI();
+
+        if (Input.GetMouseButtonDown(0) && end)
+        {
+            SceneManager.LoadScene(nextScene);
+        }
+        else if(Input.GetMouseButtonDown(0) && playerTalking == false)
         {
             showText();
             lineNum++; 
         }
-        updateUI();
+       
 	}
 
     public void showText()
@@ -55,9 +64,18 @@ public class dialogueManager : MonoBehaviour {
         {
             playerTalking = false;
             characterName = parser.getName(lineNum);
-            dialogue = parser.getText(lineNum);
+            if (parser.getText(lineNum).Contains("END"))
+            {
+                end = true;
+                dialogue = parser.getText(lineNum).Replace("END", "");
+            }
+            else
+            {
+                dialogue = parser.getText(lineNum);
+
+            }
             //DisplayImages if we want to ya know ;)
-            
+
         }
         else
         {
@@ -208,7 +226,6 @@ public class dialogueManager : MonoBehaviour {
     }
     void CreateButtons()
     {
-        Debug.Log(choices.Count);
         for (int i = 0; i < choices.Count; i++)
         {
             string textual = choices[i].Split('$')[0];
@@ -311,7 +328,7 @@ public class dialogueManager : MonoBehaviour {
     {
         for (int i = 0; i < buttons.Count; i++)
         {
-            print("Clearing buttons");
+            //print("Clearing buttons");
             Button b = buttons[i];
             buttons.Remove(b);
             Destroy(b.gameObject);

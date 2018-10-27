@@ -9,7 +9,7 @@ public class exit : MonoBehaviour {
     private void Start()
     {
         parser.LoadDialogue();
-        manager.showText();
+        manager.parseLine();
         manager.lineNum += 1;
     }
     void Update ()

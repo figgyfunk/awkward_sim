@@ -1,0 +1,44 @@
+Jamie; The big ol' family reunion, eh? I wonder who'll bombard me this time...
+...; Hey there, Jamie! 
+Jamie; (Well shit.)
+Jamie; Hi, Aunt Karla. How are you doing?
+Aunt; Why I'm doing great, thank you. How about you, Jamie? You're a senior in high school, right?
+Player;I, uh, sure... I am? Yeah...:line,6$ !,0:!,0:!,0:!,0:!,0:!,0/0,-3,0,0,0,-1;Actually, I'm in college.:line,8$ !,0:!,0:!,0:!,0:!,0:!,0/0,-1,0,0,0,2; I am a senior, but...you know, not in high school.:line,10$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,0,0,0,0,-1 
+Aunt; Hehe, I knew it! It's been so long, too! So, what colleges are you thinking of applying to?
+Player;Ahahahahaha... Well, uh, y'know, a few.:line,16$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,-1,-2; Nope, none. At. All.:line,20$ !,0:<=,-8:!,0:!,0:!,0:!,0/0,-1,0,0,0,-2;You know what? I'll go look for some now. See you later... I mean never, Aunt Karla.:line,22$ !,0:!,0:<=,-9:!,0:!,0:!,0/3,0,0,0,0,-3
+Aunt; Wait, really? Time really flies, my gosh.
+Player;Well, it seems like you're a few years behind.:line,22$ !,0:!,0:<=,-8:!,0:!,0:!,0/0,0,-3,0,0,-3; Hahaha... yeah.:line,27$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,0,2
+Aunt; Oh oh, oh my, I'm so sorry! So then...
+Jamie; You can do the math, I hope. Where else would I be a senior?
+Aunt;...
+Aunt; OH! I had no idea you'd already been in college. Where are you studying at?
+Jamie; (Hoo boy...)
+Player;RPI.:line,30$ !,0:!,0:!,0:!,0:!,0:!,0/1,0,0,0,0,2; You really don't know anything, do you?.:line,35$ !,0:!,0:<=,-3:!,0:!,0:!,0/0,0,-3,0,0,-2
+Aunt; Dear, you must be stressed with applications. 
+Jamie; Uh...
+Aunt; You must be working hard on them. In my day, we had it tough too, you know!
+Player; Sure. Yeah. *sigh*:line,22$ !,0:!,0:!,0:!,0:!,0:!,0/0,-3,0,0,-1,-1; Uh, about that...:line,38$ !,0:!,0:!,0:!,0:!,0:!,0/0,-3,0,0,0,0; Lady do you listen?!:line,22$ !,0:!,0:<=,-11:!,0:!,0:!,0/0,0,-3,0,0,0
+Aunt; Don't you think you'd better get on top of that?
+Player;Who are you, my mother?:line,34$ !,0:!,0:<=,-11:!,0:!,0:!,0/0,0,0,-1,0,-3; Actually, no.:line,37$ !,0:<=,-7:<=,-7:!,0:!,0:!,0/0,-2,-2,0,0,0; I mean, I... I guess? :line,38$ !,0:!,0:!,0:!,0:!,0:!,0/0,-1,0,0,-2,1
+Aunt; That was rude! Mind your manners when speaking to your elders. 
+Aunt; I trust you'll work on fixing your attitude?
+Jamie; Well, I think YOU'RE the rude one, Aunt Karla. You don't remember jack shit about my life, assume you know everything, then, just, God damn!
+Jamie; Trying to get into my life is one thing, trying to assume you're my mother and being wrong about l-i-t-e-r-a-l-l-y EVERYTHING is another. You need to stop. And I need to stop, too, so good bye to you, Aunt Karla.
+Jamie; ...good fucking riddance. END
+Aunt; Someone who finally gets it! Time's flying really fast these days. Maybe it flies faster when you get older..?
+Jamie; ...what the hell?
+Player;Aunt Karla, do you get ME?:line,33$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-3,0,-2,-1; Uh, whatever you say.:line,41$ !,0:!,0:!,0:!,0:!,0:!,0/0,-1,0,-1,-1,-2
+Aunt; RPI. I've never heard of it. What are you studying?
+Jamie; Uh, just some humanities stuff. Nothing too big, really.
+Aunt; Humanities are cool too! I mean, just because I was a scientist doesn't quite take away from artists and musicians and-
+Jamie; ...Right. Yeah. Well, it was nice talking to you, Aunt Karla. That sirloin over there, it's calling me. So I'll take me and my humanities to the food. Peace.
+Jamie; *sigh* What a hassle... END
+Aunt; No, I am not your mother, of course! Your mother also doesn't relay your every waking moment to me. You can't possibly expect me to know everything!
+Player; You should have known how old I was, though.:line,26$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-2,0,-2,-3; Wow. Okay. Bye.:line,26$ !,0:!,0:<=,-8:!,0:!,0:!,0/0,0,-3,-2,0,-3 
+Aunt; You know you should be working hard on those, don't you? You really should.
+Aunt; As your Aunt, I want to see you succeed. I want you to have a bright future.
+Jamie; I, uh...
+Player; Do you, really?:line,33$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-1,0,0,-2; O-ok, thanks....:line,8$ >=,7:!,0:!,0:!,0:!,0:!,0/1,0,0,0,0,-1
+Aunt; You don't sound genuine. Are you lying to me? You must be hiding something, that's it! You aren't convincing me, Jamie.
+Jamie; ...
+Player; Your lack of understanding me is VERY convincing, trust me.:line,26$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-3,0,0,-3; Whew, alrighty then.:line,33$ !,0:!,0:!,0:!,0:!,0:!,0/0,-3,-2,0,0,-1
