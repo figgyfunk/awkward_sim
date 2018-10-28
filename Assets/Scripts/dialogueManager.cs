@@ -30,6 +30,7 @@ public class dialogueManager : MonoBehaviour {
         characterName = "";
         playerTalking = false;
         lineNum = 0;
+        player = GameObject.Find("Player").GetComponent<playerManager>();
 
     }
 	

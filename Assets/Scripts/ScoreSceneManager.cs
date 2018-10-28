@@ -13,19 +13,21 @@ public class ScoreSceneManager : MonoBehaviour {
     public Slider rightSlider;
     public Slider leftSlider;
     private playerManager player;
-    private Sprite face;
+    public Image face;
     private bool left = true;
     private bool displayed = false;
     private int final;
     private bool centered = false;
     private float converted;
+    private int i;
     
    
 	// Use this for initialization
 	void Start ()
     {
+        
         player = GameObject.Find("Player").GetComponent<playerManager>();
-        face = player.getFace();
+        face.sprite = player.getFace();
         final = player.chooseSprite();
         if(final == 3)
         {
@@ -103,7 +105,7 @@ public class ScoreSceneManager : MonoBehaviour {
                     else
                     {
                         displayed = true;
-                        //face here. 
+                        face.gameObject.SetActive(true); 
                     }
                 }
                 else if (final < 2)
@@ -115,13 +117,13 @@ public class ScoreSceneManager : MonoBehaviour {
                     else
                     {
                         displayed = true;
-                        //face here. 
+                        face.gameObject.SetActive(true);
                     }
                 }
                 else
                 {
                     displayed = true;
-                    //face true;
+                    face.gameObject.SetActive(true);
                 }
             }
                 

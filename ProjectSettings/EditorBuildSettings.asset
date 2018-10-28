@@ -5,13 +5,43 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/mainMenu.unity
+    guid: 0a3a8493a57c4e94fb86ff95a276d7a4
   - enabled: 1
     path: Assets/Scenes/baseScoreScreen.unity
     guid: 436fe8fc5da0c9f489997926a5f07359
   - enabled: 1
     path: Assets/Scenes/party.unity
     guid: ebfd2fd61b1744448bfc6032a612feda
+  - enabled: 1
+    path: Assets/Scenes/grandma.unity
+    guid: ec2e997f09d7014499458504067fcfb5
+  - enabled: 1
+    path: Assets/Scenes/aunt.unity
+    guid: ba2ede9d274c897478dc24a809047bf5
+  - enabled: 1
+    path: Assets/Scenes/auntScoreScreen.unity
+    guid: 78dd2519f255642428e50036794d9968
+  - enabled: 1
+    path: Assets/Scenes/partyScoreScreen.unity
+    guid: d643bc2ddaaf70b4d846dbe6e5e1e74c
+  - enabled: 1
+    path: Assets/Scenes/car.unity
+    guid: ac19d65fec0e98f4babe21f62d6c2007
+  - enabled: 1
+    path: Assets/Scenes/carScoreScreen.unity
+    guid: 6b36b1b063f382b45b83c8ec746514b9
+  - enabled: 1
+    path: Assets/Scenes/brother.unity
+    guid: beb59f16b923b6348838b3ca2360553c
+  - enabled: 1
+    path: Assets/Scenes/brotherScoreScreen.unity
+    guid: df85f2b5acd5a3f4b95d0c93e7891f2d
+  - enabled: 1
+    path: Assets/Scenes/endMenu.unity
+    guid: 25f51ffbd37f209479372ea3e36d4e11
   m_configObjects: {}
