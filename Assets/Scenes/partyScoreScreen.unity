@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc00fd36bbf67994f9a1e3d839d0fb22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  song: {fileID: 8300000, guid: a2b04fa8763e69a4b87a634acb0aab41, type: 3}
   defaultValue: 0
   waggleTimer: 5
   maxWaggle: 250

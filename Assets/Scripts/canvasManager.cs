@@ -10,6 +10,7 @@ public class canvasManager : MonoBehaviour {
     public GameObject diamondFrame;
     public GameObject sprite;
     public List<GameObject> characters;
+    private int i = 0;
 	// Use this for initialization
 	
     public void updateTextbox()
@@ -34,6 +35,7 @@ public class canvasManager : MonoBehaviour {
 
     public void activateCharacter()
     {
-        characters[1].SetActive(true);
+        characters[i].SetActive(!characters[i].activeInHierarchy);
+        i += 1;
     }
 }

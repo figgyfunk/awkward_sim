@@ -65,7 +65,13 @@ public class dialogueManager : MonoBehaviour {
         {
             playerTalking = false;
             characterName = parser.getName(lineNum);
-            if (parser.getText(lineNum).Contains("END"))
+            if (parser.getText(lineNum).Contains("ACTIVATE"))
+            {
+                canvas.activateCharacter();
+                dialogue = parser.getText(lineNum).Replace("ACTIVATE", "");
+
+            }
+            else if (parser.getText(lineNum).Contains("END"))
             {
                 end = true;
                 dialogue = parser.getText(lineNum).Replace("END", "");
@@ -75,6 +81,7 @@ public class dialogueManager : MonoBehaviour {
                 dialogue = parser.getText(lineNum);
 
             }
+            
             //DisplayImages if we want to ya know ;)
 
         }
@@ -237,6 +244,7 @@ public class dialogueManager : MonoBehaviour {
             {
                 GameObject button = (GameObject)Instantiate(choiceBox);
                 makeChoice cb = button.GetComponent<makeChoice>();
+                Debug.Log(textual);
                 cb.setText(textual.Split(':')[0]);
                 cb.choice = textual.Split(':')[1];
                 cb.manager = this;

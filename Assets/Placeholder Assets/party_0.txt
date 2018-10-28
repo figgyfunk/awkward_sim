@@ -1,0 +1,67 @@
+Jamie; ...It's really been some time. I wonder who's here.
+Jamie; (Looking around though... I don't really see anyone I recognize.)
+. . .; Hey, Jamie! ACTIVATE
+Jamie; (...Who's that?)
+Jamie; Heyyyyyyy there! What's up?
+. . .; Not much, not much. Everything's going great! How about you? You were working on... that thing!
+Jamie; Wha..?
+. . .; You know, THAT thing.
+Player;Sorry, do I know you?:line,9$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-1,-1,0,-1;Oh, it was fine! Thanks for asking!:line,21$ !,0:!,0:!,0:!,0:<=,-18:!,0/1,0,0,0,0,2; Good, good... remind me how your name's spelled again?:line,18$ !,0:>=,-18:!,0:>=,-18:!,0:!,0/1,0,0,0,0,0,2; Pretty terrible, yeah. I try not to talk about it.:line,21$ !,0:<=,-22:!,0:!,0:!,0:!,0/0,-2,-1,0,0,0,1
+. . .; You... seriously don't remember? We were in swimming together!
+Player;Oooohhhhhhhh, of course.:line,23$ !,0:!,0:>=,-18:!,0:!,0:!,0/0,0,0,0,0,2;Nope.:line,13$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-3,-2,0,-3; I, uh, think I'm getting a phone call...:line,11$ !,0:!,0:!,0:!,0:!,0:!,0/0,-1,0,0,-3,0,-2
+. . .; Oh, ‘kay. See you later, then. 
+Jamie; Phew. That was close. END
+. . .; Damn, I thought we were pretty close. Guess I was wrong. 
+Jamie; ...
+. . .; I thought I meant something to you. *sigh*
+Jamie; I, uh...
+. . .; Goodbye, Jamie. END
+. . .; Haha, you remembered! Yeah, it's S-t-e-v Stev. My last name's a bit weird, too, but, y'know.
+Jamie; (Dodged one there...)
+Jamie; Yeah. I gotchu. Thanks for remembering me.
+. . .; Ah, c'mon. Don't sweat it. Still swimming?
+Jamie; ...You could say that.
+. . .; Hey, that's chill, it's been a hot minute. Brings me back. Swimming was fun, back in the day.
+Jamie; (...Right, I did swimming. Don't really remember it though.)
+Jamie; Haha, yeah. Same here. ACTIVATE
+. . .; Haha....oh, yo, come over here!
+. . . . .; Yoooo, it's you guys! How's it been?
+. . .; Good, good.
+. . . . .; Hey, it's Jamie! What's goin on?
+Jamie; (...soooooooo, who's this?)
+Player;I NEED JUICE, IMMA GET SOME JUICE!:line,32$ !,0:!,0:!,0:!,0:!,0:!,0/0,-1,0,-2,0,-3;Uh..........:line,37$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,-2,-3; Gonna be completely honest with y'all, I don't know who you guys are.:line,48$ !,0:!,0:>=,-18:>=,-18:!,0:!,0/1,0,0,0,0,-3; I think... you're both thinking of my twin.:line,57$ >=,22:!,0:!,0:!,0:!,0:!,0/2,0,0,0,0,2
+Jamie; ...Because my throat's kinda hurt. Yeah, that's it! I've been sick for days!
+. . .; ...What?
+. . . . .; It's fine, we'll, uh, catch up with you later. 
+Jamie; Mmkay. *cough* cough* 
+Jamie; (I'm actually sick, but of myself...) END
+. . .; You really don't remember us, do you? Damn, Jamie.
+. . . . .; Damn's right, Jamie. That's a shame you don't remember us.
+Jamie; I'm sorry...
+. . . . .; You're, like, probably not. It's ok though.
+. . .; Let's go find some other people to talk to.
+Jamie; I... *sigh* END
+Jamie; Soooo, yeah. That's the truth.
+. . . . .; Tch, rude!
+. . .; You didn't have to come out and say it...
+. . .; You never really did have much of a filter.
+. . . . .; I'll say. I bet you've managed to wander your way into situations like this before. Hmmmm?
+Jamie; (Yowch.)
+Jamie; Haha, not really...
+. . .; Hmph. Well, whatever, let's find someone else to talk to. 
+. . . . .; Someone who actually cares, yeah. END
+Jamie; Yeah, the one who was actually supposed to be here's sick right now. I just wanted to see what the party was gonna be like.
+. . .; Huh, I see. Jamie was a nice person, after all. Would've totally done something like that.
+. . . . .; I'd buy it. Well, sorry for bothering you, twin Jamie. 
+. . . . .; I must say, you two look exactly alike.
+Jamie; Yeah, we're identical...
+. . .; Jamie never mentioned that. Huh. 
+. . . . .; Ah, whatever. Who cares. I take it, other than the cold, Jamie's well?
+Jamie; ...Yeah. Just fine.
+. . .; Cool.
+. . . . .; That's good to hear!
+. . . . .; Anyway, I'm a bit thirsty. See ya, twin Jamie!
+. . .; Give Jamie our regards, Twinnie. Or Jamin? Jatwin?
+Jamie; (So bad...) ...Sure, will do.
+. . .; Righty, cya Twamie!
+Jamie; ...save me. END

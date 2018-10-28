@@ -1,6 +1,6 @@
 Jamie; Ugh... what is this shit... I feel like ass. I... probably drank juuuuust a bit too much. But I had sooooo much fun, too, so why'd the fun have to end with me in this sorry state ._.
 Mom; Jamie, get your butt down here! Grandma's over to visit!
-Jamie; God damni- Okay, coming!
+Jamie; God damni- Okay, coming! ACTIVATE
 Jamie; 'Sup, Grams?
 Mom; Jamie, that is not how you address your grandmother! 
 Grandma; Why, hello there sweet Jamie. My, you don't look well. Are you okay? Did you recently come down with a fever?
@@ -8,7 +8,7 @@ Player;Yeah, something like that, I guess.:line,7$ !,0:!,0:!,0:>=,-1:!,0:!,0/0,0
 Grandma; I'm sorry to hear that, dear. Would you be up to go to breakfast?
 Player;Hell yeah, let's go! Mind if we drive through McDonalds?:line,13$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,-2,3; Nah, not really. A nice, long nap sounds better.:line,10$ !,0:!,0:!,0:!,0:!,0:!,0/3,0,0,0,0,-3; Uhh... could we, y'know, re...schedule this fine breakfast outing?.:line,11$ >=,4:!,0:!,0:!,0:!,0:!,0/0,-1,0,-2,0,-3; Can I-May I take a shower first?:line,11$ !,0:!,0:!,0:!,0:>=,-1:!,0/0,0,0,0,0,-1
 Mom; Jamie!
-Grandma; Dear, it's alright. I may have just drove these four hours for nothing.
+Grandma; Dear, it's alright. I may have just drove these four hours for nothing. END
 Grandma; I did drive four hours to come see you, Jamie. What do you say we spend some time together?
 Player;Sucks to suck, Grams.:line,26$ !,0:!,0:>=,4:!,0:!,0:!,0/0,0,-2,0,0,-3; I suppose I can...:line,19$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,0,0,0,1; OH MY-blaaaaaargh... I... I'm not really feeling...it...:line,17$ !,0:!,0:!,0:>=,4:!,0:!,0/0,-1,0,-2,0,2; Hey, I couldn't possibly turn you down. Imma power through just for you Grams.:line,19$ >=,5:!,0:!,0:!,0:!,0:!,0/0,-1,0,0,0,3
 Jamie; I don't feel so good, Grams...
@@ -37,4 +37,4 @@ Jamie; Grams, c'mon, you've got to understand you're overreacting...
 Grandma; So I'm overreacting to caring about my grandchild's health? You know what could be a good remedy, besides getting rid of your games?
 Jamie; I'm not giving up games, thank you very much.
 Grandma; I... it is indeed true it has been some time. But, my dear grandchild, you look so very pale, maybe a step outside will do you some good. I only care for your well-being. What do you say?
-Player;Sorry Grams...I'm not in the best state of mind, just a little sick. I didn't mean to be rude just then:line,7$ !,0:!,0:!,0:!,0:!,0:!,0/1,0,0,0,0,1;Excuuuuse me, but you look like old shit, Grams, Don't give me that.line,12$ !,0:!,0:<=,-8:!,0:!,0:!,0/0,0,0,-3,0,-3;I guess I'll come clean. I kind of did some illegal shit last night.line,11$ !,0:>=,-1:!,0:!,0:!,0:!,0/1,0,0,0,0,-2;Y'know, Grams, maybe you're right. I should stay inside.line,6$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,-2,0,-1
+Player;Sorry Grams...I'm not in the best state of mind, just a little sick. I didn't mean to be rude just then:line,7$ !,0:!,0:!,0:!,0:!,0:!,0/1,0,0,0,0,1;Excuuuuse me, but you look like old shit, Grams, Don't give me that.line,12$ !,0:!,0:<=,-8:!,0:!,0:!,0/0,0,0,-3,0,-3;I guess I'll come clean. I kind of did some illegal shit last night.:line,11$ !,0:>=,-1:!,0:!,0:!,0:!,0/1,0,0,0,0,-2;Y'know, Grams, maybe you're right. I should stay inside.:line,11$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,-2,0,-1

@@ -52,6 +52,7 @@ public class dialogueParser : MonoBehaviour {
             }
             else
             {
+                //Debug.Log(currLine);
                 line entry = new line(data[0], data[1]);
                 script.Add(entry);
             }

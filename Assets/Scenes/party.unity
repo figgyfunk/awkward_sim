@@ -430,6 +430,11 @@ Prefab:
       propertyPath: parser
       value: 
       objectReference: {fileID: 255199771}
+    - target: {fileID: 114712168796340314, guid: e171231f4a7ca6a4b874591054affd3a,
+        type: 2}
+      propertyPath: song
+      value: 
+      objectReference: {fileID: 8300000, guid: a2b04fa8763e69a4b87a634acb0aab41, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e171231f4a7ca6a4b874591054affd3a, type: 2}
   m_IsPrefabAsset: 0
@@ -828,7 +833,7 @@ Prefab:
     - target: {fileID: 114219441875522928, guid: 424dd3d12982b4243aaf9dfabc97480a,
         type: 2}
       propertyPath: prefix
-      value: family-reunion
+      value: party
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 424dd3d12982b4243aaf9dfabc97480a, type: 2}
@@ -1183,7 +1188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1034604286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1523,7 +1528,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: dcd10b7d1b4e0a94889069e30f9e18e4, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreSceneManager : MonoBehaviour {
 
+    public AudioClip song;
     public float defaultValue;
     public float waggleTimer;
     public float maxWaggle;
@@ -20,12 +21,16 @@ public class ScoreSceneManager : MonoBehaviour {
     private bool centered = false;
     private float converted;
     private int i;
+    private musicManager music;
     
    
 	// Use this for initialization
 	void Start ()
     {
-        
+        music = GameObject.Find("MusicManager").GetComponent<musicManager>();
+        music.pause();
+        music.setSong(song);
+        music.play();
         player = GameObject.Find("Player").GetComponent<playerManager>();
         face.sprite = player.getFace();
         final = player.chooseSprite();
