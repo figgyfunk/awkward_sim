@@ -68,13 +68,17 @@ public class dialogueManager : MonoBehaviour {
             if (parser.getText(lineNum).Contains("ACTIVATE"))
             {
                 canvas.activateCharacter();
-                dialogue = parser.getText(lineNum).Replace("ACTIVATE", "");
+                string temp = parser.getText(lineNum);
+                temp = temp.Replace("ACTIVATE", "");
+                dialogue = temp;
 
             }
             else if (parser.getText(lineNum).Contains("END"))
             {
                 end = true;
-                dialogue = parser.getText(lineNum).Replace("END", "");
+                string temp = parser.getText(lineNum);
+                temp = temp.Replace("END", "");
+                dialogue = temp;
             }
             else
             {
@@ -237,14 +241,14 @@ public class dialogueManager : MonoBehaviour {
         for (int i = 0; i < choices.Count; i++)
         {
             string textual = choices[i].Split('$')[0];
-            
+            Debug.Log(choices);
             string[] requirements = choices[i].Split('$')[1].Split('/')[0].Split(':');
             string[] additions = choices[i].Split('$')[1].Split('/')[1].Split(',');
             if (parseRequirements(requirements))
             {
                 GameObject button = (GameObject)Instantiate(choiceBox);
                 makeChoice cb = button.GetComponent<makeChoice>();
-                Debug.Log(textual);
+               // Debug.Log(textual);
                 cb.setText(textual.Split(':')[0]);
                 cb.choice = textual.Split(':')[1];
                 cb.manager = this;

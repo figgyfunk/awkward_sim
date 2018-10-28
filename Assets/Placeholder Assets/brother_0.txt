@@ -7,7 +7,7 @@ Player;Huh. Tell me more!:line,6$ !,0:!,0:!,0:!,0:!,0:!,0/2,0,0,0,0,1;This again
 Brother; You don't sound quite enthusiastic, but maybe explaining it will change that!
 Brother; So, it's gonna be this carpool-style app that lets you connect with friends and arrange carpools. You can also search for nearby rides.
 Brother; This is so neat and inventive, don't you think, Jamie?
-Player;Isn't that just, like, Uber?:line,9$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,-1,-2;I dunno, this really doesn't strike me as inventive...:line,9$ !,0:!,0:!,0:!,0:>=,-23:!,0/0,0,0,0,0,1; Hmm...:line,9$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,0,0,0,0,-1;You're just setting yourself up for failure. You know, just like your other BRILLIANT ideas.:line,38$ !,0:!,0:<=,-26:!,0:!,0:!,0/0,0,-2,0,0,-3
+Player;Isn't that just, like, Uber?:line,10$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,-1,-2;I dunno, this really doesn't strike me as inventive...:line,10$ !,0:!,0:!,0:!,0:>=,-23:!,0/0,0,0,0,0,1; Hmm...:line,10$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,0,0,0,0,-1;You're just setting yourself up for failure. You know, just like your other BRILLIANT ideas.:line,38$ !,0:!,0:<=,-26:!,0:!,0:!,0/0,0,-2,0,0,-3
 Brother; Nonononono, you've got it all wrong, Jamie! This is different from Uber. With my idea, you can make plans with friends. Think of it as a social media network.
 Jamie; Huh. You say that...
 Brother; You've gotta trust me on this, it's different!

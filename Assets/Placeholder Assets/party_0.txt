@@ -9,7 +9,7 @@ Jamie; Wha..?
 Player;Sorry, do I know you?:line,9$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-1,-1,0,-1;Oh, it was fine! Thanks for asking!:line,21$ !,0:!,0:!,0:!,0:<=,-18:!,0/1,0,0,0,0,2; Good, good... remind me how your name's spelled again?:line,18$ !,0:>=,-18:!,0:>=,-18:!,0:!,0/1,0,0,0,0,0,2; Pretty terrible, yeah. I try not to talk about it.:line,21$ !,0:<=,-22:!,0:!,0:!,0:!,0/0,-2,-1,0,0,0,1
 . . .; You... seriously don't remember? We were in swimming together!
 Player;Oooohhhhhhhh, of course.:line,23$ !,0:!,0:>=,-18:!,0:!,0:!,0/0,0,0,0,0,2;Nope.:line,13$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-3,-2,0,-3; I, uh, think I'm getting a phone call...:line,11$ !,0:!,0:!,0:!,0:!,0:!,0/0,-1,0,0,-3,0,-2
-. . .; Oh, ‘kay. See you later, then. 
+. . .; Oh, 'kay. See you later, then. 
 Jamie; Phew. That was close. END
 . . .; Damn, I thought we were pretty close. Guess I was wrong. 
 Jamie; ...

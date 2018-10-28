@@ -10,7 +10,7 @@ public class endManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        music = GameObject.Find("musicManager").GetComponent<musicManager>();
+        music = GameObject.Find("MusicManager").GetComponent<musicManager>();
         music.pause();
         music.setSong(song);
         music.play();
