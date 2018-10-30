@@ -31,11 +31,12 @@ public class dialogueParser : MonoBehaviour {
     //parses file and creates script for game to read info from. 
     public void LoadDialogue()
     {
-        string fileName = "Assets/Placeholder Assets/";
-        fileName += prefix;
-        fileName += "_0.txt";
+        string name = "/Resources/textFiles/";
+        name += prefix;
+        name += "_0.txt";
+        string fileName = Application.dataPath + name;
         string currLine;
-        StreamReader r = new StreamReader(fileName);
+        StreamReader r = new StreamReader(fileName, Encoding.Default);
 
         while ((currLine = r.ReadLine()) != null)
         {
