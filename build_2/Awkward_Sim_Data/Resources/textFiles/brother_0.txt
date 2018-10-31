@@ -1,0 +1,46 @@
+Jamie; ...So, what's up? What brings this dinner on?
+. . .; First, I'd like to thank you for coming out here for your older brother. It makes me happy.
+Brother; But, yes, I contacted you because I want to consult with you.
+Jamie; On..?
+Brother; You see, I've been working on something. It's gonna be great.
+Player;Huh. Tell me more!:line,7$ !,0:!,0:!,0:!,0:!,0:!,0/2,0,0,0,0,1;This again? You do realize your last grand idea kinda sucked.: line,38$ !,0:!,0:!,0:<=,-23:!,0:!,0/0,0,-2,0,-1,-1; Oh, uh...:line,6$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,0,0,0,0,-1; Sounds like this is gonna be about money. Unfortunately, I'm strapped for cash right now.:line,34$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,0,0,0,0,-1
+Brother; You don't sound quite enthusiastic, but maybe explaining it will change that!
+Brother; So, it's gonna be this carpool-style app that lets you connect with friends and arrange carpools. You can also search for nearby rides.
+Brother; This is so neat and inventive, don't you think, Jamie?
+Player;Isn't that just, like, Uber?:line,10$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,-1,-2;I dunno, this really doesn't strike me as inventive...:line,12$ !,0:!,0:!,0:!,0:>=,-23:!,0/0,0,0,0,0,1; Hmm...:line,10$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,0,0,0,0,-1;You're just setting yourself up for failure. You know, just like your other BRILLIANT ideas.:line,38$ !,0:!,0:<=,-26:!,0:!,0:!,0/0,0,-2,0,0,-3
+Brother; Nonononono, you've got it all wrong, Jamie! This is different from Uber. With my idea, you can make plans with friends. Think of it as a social media network.
+Jamie; Huh. You say that...
+Brother; You've gotta trust me on this, it's different!
+Player;I'm not too sure it's different from Uber.:line,27$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-1,0,0,-1;Uh, I think I get it.:line,14$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,0,1; I see. I guess that does sound useful.:line,14$ >=,25:!,0:!,0:!,0:!,0:!,0/2,0,0,0,0,1; Wow, man, that's almost as efficient as texting people and THEN getting an Uber.:line,38$ !,0:!,0:<=,-26:!,0:!,0:!,0/-3,0,0,0,-2,-3
+Brother; Yeah, I really think this is the jackpot. I'm riding on this idea.
+Jamie; I can see that. Very clearly.
+Brother; Well, I'm not really riding high at the moment. Some last-minute scrambling's happening.
+Jamie; (...I wonder why.)
+Jamie; What happened?	
+Brother; One of my biggest investors, a huge one at that, dropped at the last minute! How dumb is that?
+Jamie; That's rather unfortunate.
+Brother; I'm about five grand short, if I can get those funds I guarantee I'll get the ball rollin' faster than you've ever seen!
+Jamie; I'm not entirely convinced. And you can't possibly be expecting me to chip in five thousand?!
+Brother; Jamie, don't be like that. You've gotta look at the bigger picture here. In two to three years, your investment could quadruple! Think of that!
+Jamie; I... still don't think I can trust this'll work. Your ideas haven't worked up to now, so I'd like to see proof. Especially before committing as much money as you'll probably need.
+Brother; Jamie, c'mon. Help your big brother out here.
+Player;Yeah, that's a lot of money to commit. Too much.:line,28$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,0,0,0,-1;It makes sense now. This is why you called me out to dinner. When will you learn?:line,38$ !,0:!,0:!,0:!,0:!,0:!,0/0,-3,0,0,0,-1; Totally! It's not like I lost three grand last time you came to me with a glorious idea.:line,38$ !,0:<=,-26:<=,-26:!,0:!,0:!,0/0,-3,-3,0,-1,-3;I still need some more information.:line,27$ !,0:!,0:!,0:!,0:!,0:!,0/1,0,0,0,0,1
+Brother; I've been doing a bit of research, and the market for this kind of thing is huuuuge. I've also got someone on board who's a genius coder. 
+Brother; I'm telling you again, Jamie. This is really gonna take off.
+Brother; Trust me. Please.
+Player;Sorry man, the money's just too much for me.:line,34$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,0,0,0,-1;You know what? I'll put my faith in you one last time. I'm in.:line,31$ !,0:!,0:!,0:!,0:!,0:!,0/2,0,0,-1,0,1; I'll help... but I've got to at LEAST double my investment, you hear? You've got to earn my trust after all your previous debacles.:line,38$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-2,0,-1,-1;I... I'm not sure. I've got bills to pay, rent to take care of, I kinda want a dog too...:line,34$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,-2,0,-1
+Brother; I knew you'd pull through for me Jamie! I PROMISE I won't let you down. Thank you.
+Brother; Thank you so much! 
+Jamie; Let's get to work, Brother. Time to make bank. END
+Brother; Nah, don't bother making excuses for me, Jamie. It's not like you're at a job the pays well, and you just came back from a cushy, two-week vacation.
+Brother; I... figured it'd turn out this way. I wanted to hope I was wrong, though. 
+Jamie; Sorry, Bro. I just can't back your idea.
+Brother; Stop. Before I actually get mad. Let's get the check and go our separate ways. And since you're so tight on cash, I'll do the honors. END
+Brother; You know what? Nevermind! There's probably a reason we don't talk much. Heaven forbid I need help from a sibling, or just any form of compassion. Y'know, maybe it's for the best if we cut this off right here and now.
+Jamie; Huh, oh, yeah. That's probably for the best.
+Brother; Tch. Show me some sympathy and pay the bill. I'm out.
+Jamie; Huh, what, wait! That's totally not cool!
+Brother; Bye, Jamie. Try to look in the mirror sometimes, will you?
+Jamie; ...whatever. 
+Jamie; (At least I don't have to back the stupid project, but...)
+Jamie; I guess this is it... brother. END

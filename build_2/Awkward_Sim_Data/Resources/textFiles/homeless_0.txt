@@ -1,0 +1,78 @@
+Jamie; *humming* Oh, there's the exit. *more humming*  You've got to be kidding me...I'm hitting all the lights! *sigh*
+Jamie; Traffic's especially heavy today. Damnit!
+Jamie; (Ugh, cars as far back AND forward as I can see...) ACTIVATE
+...; Hello? Excuse me? *knock knock*
+Player;Ignore the knock:line,5$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,0,-2;Take a quick peek:line,9$ !,0:!,0:!,0:!,0:!,0:!,0/0,-1,0,0,0,-2; Roll down the window:line,13$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,0,0,1 
+Jamie; *sigh* (probably some homeless person. No need to give them attention.)
+...; *knock knock* 
+Jamie;God damn knocking..!
+Player;Knock vigorously from the inside:line,15$ !,0:!,0:<=,-13:!,0:!,0:!,0/0,0,-2,0,0,-2;Make an angry face:line,18$ !,0:!,0:!,0:!,0:!,0:!,0/0,-1,-2,0,-1,-1
+Jamie; (I guess it wouldn't hurt to peek...)
+Jamie; (It's a homeless person...disheveled, as expected.)
+Jamie; What a pain...
+Player;Roll down the window.:line,13$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,0,-2; Look forward intently:line,29$ !,0:<=,-10:!,0:!,0:!,0:!,0/0,-1,-2,0,0,-2;Ignore the homeless man:line,32$ !,0:!,0:!,0:!,0:!,0:!,0/1,0,0,0,0,-2
+Jamie; (...guess I'll roll down the window.)
+Player;Hey, uh...what's up..?:line,24$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,0,0,1; I.. don't have any money.:line,37$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,0,-1,0,-2; Please leave.:line,47$ !,0:!,0:!,0:!,0:!,0:!,0/0,0,-2,0,-1,-2
+Jamie; (Knock yourself out, loser...)
+Jamie; Just don't knock on my damn window!
+Jamie; When will this light turn green?! Hurry it up! Tch. END
+Jamie; (Maybe if I make the angriest face ever, this dude'll go away.)
+Jamie; ...
+Jamie; (Time to put it on.) 
+Jamie; Heh. How's this?
+Jamie; Wait wow I look ugly. I guess that ought to drive him away. 
+Jamie; Oh, the light's green. Here's MY cue to drive away. END
+Jamie; What can I do for you?
+Homeless man; Do you got cash on ya?
+Jamie; Uh, hold on just a sec...
+Jamie; (Am I really gonna give this dude money?)
+Player;I'll get some money for you right now:line,50$ !,0:!,0:!,0:!,0:!,0:!,0/1,0,0,0,0,3; I can't give you money, but I can give you something else.:line,56$ !,0:!,0:<=,-3:!,0:!,0:!,0/0,-1,0,0,0,1;I don't think I can give you anything.:line,60$ !,0:!,0:!,0:!,0:!,0:!,0/0,-1,0,0,0,-2
+Jamie; (Yeah, not gonna deal with that.)
+Jamie; (This probably looks really forced and stupid, but hey, it...probably works? So why not try.)
+Jamie; ...And there's the green light I've been waiting for. Here we go! END
+Jamie; ...
+Jamie; (I don't want to deal with this right now.)
+Jamie; Uh...
+...; *knock knock*
+Jamie; Nope, nuh-uh, not happening. Ig-nored. END
+Jamie; Sorry, man, but I don't have any money.
+...; ...You lying to me, aren't ya? 
+Jamie; Huh..?
+...; Ya wouldn't have no car if yer broke! Yer heartless!
+Jamie; I...uh...
+...; Ya know what? Fuckin liars, man. I don't need nothin from someone like yerself.
+Jamie; What..? But I...
+...; Nah, you lying, I know these things. Yer gonna regret lyin, ya hear?
+Jamie; Alriiiiiiighty. 
+Jamie; (If I've ever wanted God to exist...it's now. Make this damn light turn green, please!) END
+Jamie; I'm going to have to ask you to leave nicely.
+...; Huh? What?
+Jamie; Goodbye. END	
+Jamie; Here, let me get some money. This is all I can offer.
+...; Thank you. God bless you.
+Jamie; Yeah, have a good one. Use the money well.
+...; Thank you, thank you. You bet I'll use it well.
+Jamie; Mmkay. 
+Jamie; (I guess doing something good like this is kind of nice, too.) END
+...; Nah, money's what I need. Ya don't got any, might as well be worthless.
+Jamie; Hmph. I WAS going to give you a snack...but now it just feels like a worthless endeavor.
+...; Fuck. Damnit.
+Jamie; I really hope no one else gives you money. It's a green light now, soo...END
+...; You really can't give me nothing? 
+Jamie; I mean...I could, but, y'know.
+...; Please, you gotta help a brother in need!
+Jamie; I mean, I...
+Player; Okay, okay.:line,65$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,-1,0,-1,1; No is no.:line,72$ !,0:!,0:!,0:!,0:!,0:!,0/0,-2,-3,-1,0,-3
+Jamie; I'll give you some change.
+...; God- God bless yer soul! Thank you!
+Jamie; Hold on just a sec...
+Jamie; (...Oh, the light's green. This is a little awkward.)
+Some random driver; *HONK*
+Jamie; (Shut up!)
+Jamie; Sorry, dude. END
+...; ...I understand.
+Jamie; We're on the same page, then.
+...; Thanks for talking to me, though. No one really does that.
+Jamie; Haaaaa...no problem, I suppose?
+Jamie; Well, enjoy yourself.
+...; Thank ya. END

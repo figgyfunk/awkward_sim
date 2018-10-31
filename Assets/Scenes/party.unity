@@ -434,7 +434,7 @@ Prefab:
         type: 2}
       propertyPath: song
       value: 
-      objectReference: {fileID: 8300000, guid: a2b04fa8763e69a4b87a634acb0aab41, type: 3}
+      objectReference: {fileID: 8300000, guid: c7173739270ccde42b61718025d1ea3a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e171231f4a7ca6a4b874591054affd3a, type: 2}
   m_IsPrefabAsset: 0
@@ -1236,9 +1236,9 @@ RectTransform:
   m_Father: {fileID: 294967980}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 343, y: -125}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 343, y: 217}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1170547682
